@@ -1,0 +1,6 @@
+plugin.tx_srfreecap_pi1 {
+	morphFactorx = {$plugin.tx_srfreecap.morphFactor}
+	fadepic = {$plugin.tx_srfreecap.fadepic}
+}
+plugin.tx_srfreecap_pi2._CSS_DEFAULT_STYLE =
+	
