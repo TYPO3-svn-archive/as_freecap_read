@@ -1,0 +1,21 @@
+plugin.tx_srfreecap {
+
+    # cat=plugin.tx_srfreecap/dims/02; type=int+; label= CAPTCHA image height: Height of the generated image.
+	imageHeight = 50
+
+
+    # cat=plugin.tx_srfreecap//05; type=string; label= Text morphing factor: Morphing factor applied to each character of the CAPTCHA string.
+	morphFactor = 0.001
+	
+	# cat=plugin.tx_srfreecap//05; type=string; label= Text morphing factor x: Morphing factor applied to each character of the CAPTCHA string.
+	morphFactorx = 0.001
+	
+	# cat=plugin.tx_srfreecap//05; type=string; label= Fade factor: How much the font will be faded.
+	fadepic = 35
+
+    # cat=plugin.tx_srfreecap/file/01; type=file[]; label= Default words list file: All words lists should be in the same directory.
+	defaultWordsList = EXT:as_freecap_read/res/words/.ht_default_freecap_words
+
+    # cat=plugin.tx_srfreecap/file/02; type=string; label= List of GD font files: Coma-separated list of GD font files located in directory uploads/tx_srfreecap/.
+	fontFiles = EXT:sr_freecap/res/fonts/.anonymous.gdf
+}
